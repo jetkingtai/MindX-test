@@ -33,8 +33,8 @@ header{
 }
 header::before{
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     content: "";
     display: block;
     background: rgba(0,0,0, 0.5);
@@ -165,7 +165,7 @@ header input:checked ~ .menu-item{
     color: var(--color1);
     z-index: 10;
     border-bottom: 3px solid rgba(3, 3, 3, 0.959);
-    margin: 700px 75px 75px;
+    margin: 900px 75px 75px;
 }
 #in{
     color: var(--color1);
