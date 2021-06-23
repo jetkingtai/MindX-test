@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#header {
+    background-color: orangered;
+    width: 100%;
+    height: 120px;
+}
+a   {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: small;
+}
+#text   {
+    width: 100%;
+    height: 20px;
+}
+#than   {    
+    width: 100%;
+    height: 1000px;
+} 
+#loc    {
+    
+    float: left;
+    width: 20%;
+    height: 100%;
+    background-color: gray;
+}
+#item   {
+    float: left;
+    width: 80%;
+    height: 100%;
+    background-color: gray;
+}
+#text1   {
+    width: 60%;
+    height: 100%;
+    float: left;
+}
+#text2 {
+    width: 40%;
+    height: 100%;
+    float: right;
+}
+#tim    {
+    /* background-color: wheat; */
+    width: 100%;
+    height: 100px;
+}
+#findmain   {
+    /* background-color:aquamarine; */
+    width: 100%;
+    height: 60px;
+    padding-top: 23px;
+}
+#logomain   {
+    float: left;
+    width: ;
+    height: 65px;
+    margin-right: 50px;
+    margin-left: 10px;
+}
+#search-text    {
+    
+    float: left;
+    width: 70%;
+    height: 65px;
+
+}
+#tim-chinh    {
+    /* background-color: violet; */
+    width: 100;
+    height: 40px;
+
+}
+#timmain    {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 8px;
+}
+#chu {
+    margin-top: 8px;
+}
+.chuduoi    {
+    margin: 0;
+    margin-left: 10px;
+}
+#nhap   {
+    width: 90%;
+    height: 40px;
+    background-color: violet;
+}
