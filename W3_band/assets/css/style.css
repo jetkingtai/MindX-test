@@ -1,0 +1,356 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*
+1. từ ngoài vào trong
+2. Từ trên xuống dưới
+3. Tổng quan đến chi tiết
+*/
+
+/*
+1. Ví trí
+2. Kích Thước
+3. màu sắc
+4. kiểu dáng
+*/
+/* line-height tăng chiều cao*/
+/* text-transform viết hoa chữ*/
+/*  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);bóng đổ*/
+/* min-width: 160px; tăng chiều ngang */
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.text-white{
+    color: #fff !important;
+}
+#header{
+    height: 46px;
+    background-color: #000;
+    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  
+}
+#nav{
+    
+}
+#nav li {
+    display: inline-block;
+
+
+}
+#nav > li >a{
+    text-transform: uppercase;
+    color: #fff;
+    padding: 0 24px;
+    line-height: 46px;
+    text-decoration: none;
+    display: inline-block;
+}
+#nav  li a{
+    line-height: 46px;
+    text-decoration: none;
+   
+
+}
+#nav > li:hover > a{
+    background-color: #ccc;
+    color: #000;
+}
+#nav .subnav{
+    display: none;
+    position: absolute;
+    line-height: 24px;
+    min-width: 150px;
+
+}
+#nav .subnav li{
+    display: block;
+    padding: 0 12px;
+    background-color: #fff;
+
+}
+#nav .subnav a{
+    color: #000;
+}
+#nav li:hover .subnav  {
+    display: block;
+    background-color: #ccc;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+#nav .subnav li:hover{
+    background-color: #ccc;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+#nav .icon-second{
+    float: right;
+    color:#fff;
+    line-height: 46px;
+    padding: 0 24px;
+
+}
+#nav .icon-second:hover{
+    background-color: orangered;
+    cursor: pointer;
+}
+#slider{
+    margin-top: 46px;
+    padding-top: 50%; /*lay theo 1 nua chieu ngang*/
+    background-image: url(/assets/img/slider/silder1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    position: relative;
+}
+#slider .text-content{
+    position: absolute;
+    bottom: 46px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+.text-content .text-heading >h2{
+    letter-spacing: 4px;
+    margin: 15px 0;
+    font-weight: 500;
+    
+}
+.text-content .text-description{
+   font-size: 14px;
+}
+#content{
+
+}
+#content .content-section{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 0;
+
+}
+#content .section-heading{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+#content .section-sub-heading{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+    opacity: 0.5;
+    font-style: italic;
+    
+}
+#content .about-text{
+    padding: 20px 0;
+    text-align: justify;
+    line-height: 1.4;
+    
+}
+#content .member-list{
+    margin-top: 46px;
+    overflow: hidden;
+}
+#content .member-item{
+    float: left;
+    width:calc(100%/3);
+    text-align: center;
+
+}
+#content .member-name{
+    font-size: 15px;
+   
+
+}
+#content .member-img{
+    margin-top: 15px;
+    width: 154px;
+    border-radius: 4px;
+}
+/*content > tour-section*/
+.tour-section{
+    background-color: #000;
+}
+.tickets-list{
+    margin-top: 40px;
+    background-color: #fff;
+}
+.tickets-list li{
+    list-style-type: none;
+    color: #757575;
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+}
+.tickets-list .sold-out{
+    margin-left: 16px;
+    padding: 3px 4px;
+    color: #fff;
+    background-color: #f44336;
+}
+.tickets-list .quantity{
+    float: right;
+    width: 24px;
+    height: 24px;
+    background-color: #000;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 50%;
+    margin-top: -3px;
+
+}
+/* places */
+.places-list{
+    margin: 32px -8px 0px;
+    padding-bottom: 30px;
+    
+
+}
+.places-list .place-item{
+    float:left;
+    width: 33.3333%;
+    padding: 0 8px;
+
+    
+}
+.places-list .place-img{
+    width: 100%;
+    display: block;
+}
+.places-list .place-img:hover{
+    opacity: 0.6;
+}
+.place-time{
+    color: #757575;
+    padding-top: 15px;
+}
+.place-body{
+    padding: 16px;
+    font-size: 15px;
+    background-color: #fff;
+}
+.place-desc{
+    line-height: 1.4;
+    padding-top: 15px;
+}
+.place-heading{
+    font-size: 15px;
+    font-weight: 550;
+}
+.place-buy-btn{
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin-top: 15px;
+    display: inline-block;
+}
+.place-buy-btn:hover{
+    background-color: #ccc;
+    color: #000;
+
+}
+.clear{
+    clear: both;
+}
+.contact-section{
+
+}
+.contact-section .contact-text {
+        padding-top: 32px;
+        height: 160px;
+}
+.contact-sub-text{
+   float: left;
+   width: 50%;
+   font-size: 18px;
+   line-height: 1.5;
+   margin-top: 10px;
+}
+.contact-sub-text i{
+    width: 20px;
+    display: inline-block;
+}
+.contact-bnt{
+    
+   float: right;
+   width: 50%;
+   
+}
+.contact-bnt > input{
+    border: 1px solid #ccc;
+    font-size: 15px;
+    padding: 10px;
+    width: 49.3%;
+    margin-top: 10px;
+    
+   
+}
+
+.contact-sub-bnt input{
+    width: 99.9%;
+    font-size: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+.contact-bnt .bnt-send{
+    width: 100%;
+    text-align: right;
+    padding-top: 10px;
+    
+}
+.bnt-send input{
+    color:#fff;
+    padding: 10px;
+    background-color: #000;
+    border: 1px solid #ccc;
+}
+.bnt-send input:hover{
+    background-color: #ccc;
+    color: black;
+}
+.footer{
+    margin-top: 50px;
+    padding-top:50%;
+    background-image: url(/assets/img/slider/map.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.footer-final{
+    height: 220px;
+    background-color: #f1f1f1;
+    position: relative;
+    
+}
+.footer-info{
+    position:absolute;
+    bottom: 80px;
+    width: 100%;
+    text-align: center;
+    opacity: 0.5;
+}
+.footer-text{
+    margin-top: 10px;
+}
+.footer-text a{
+    color: black;
+}
+.footer-final i{
+    font-size: 20px;
+    padding: 2px;
+   
+}
+.footer-final i:hover{
+    opacity: 0.5;
+}
